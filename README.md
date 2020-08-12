@@ -29,10 +29,77 @@ Where y hat is the predicted value and y is the original value.
 
  - Data understanding and cleaning
  - EDA
+ - Preparing the data
  - Base Model
- - Feature Selection 
- - Try different models
  - Parametric Tuning    - RMSE
 
-## EDA
+## EDA (Univariate and Bivariate analysis)
+
+### Age & Gender
+
+<img src= "images/Age.PNG" width='400'>
+
+
+<img src= "images/Gender.PNG" width='300'>
+
+Inference
+- Count of Male and Purchase sum is high 
+- so we need to focus on them more with respect to offers
+- If you observe here the puchase in the age group of 51-55 is comparatively higher with only 7%
+- 26-35 age group where they contribute around 40% and sum of their purchases are more even though they are small- (Unmarried)
+- While Unmarried are more in the contribution
+
+### City
+
+<img src= "images/City.PNG" width='400'>
+
+Inference:
+- Even the number of count in the city b is more, purchase wise City C is contributing more.
+
+### Marital Status
+
+<img src= "images/Marital%20Status.PNG" width='400'>
+
+Inference
+
+- Unmarried count is more with both Male and Female genders - Overall purchase amount is same
+- No special concentration required, show equal importance
+
+### Occupation
+
+<img src= "images/Occupation_type.PNG" width='400'>
+
+Inference
+- Number of more counts in occuptation doesn't contribute more in the purchase amount
+- Mean value of purchase value for occuptation 8 & 15 is more compartievly to the number of counts(Heavy Spenders)
+- More effort on the less occupation (8&15) coulld generate more purchases
+- Occupation 11 to 18 looks like a target are to focus in terms of raising puchases
+- On other hand We can concentrate is there a possiblity of increasing the more count occupation to contribute to purchase
+- Occupation 4 which is of more count as more number of youngsters- We can focus on the product of their interest in relation to their occupation
+- Age group"26-35" are almost high in every categories as they contribute 40% of the total ages, yet the puchase amount is less if we can attract them we can surely increase the   sales by 5-10%
+
+### Stay_in_years
+
+<img src= "images/Stay_in_years.PNG" width='600'>
+
+
+Inference
+- Here you can observe that the person staying 1 year are on the exploration state
+- As the stay increases the purchase amount decreases maybe they have got all the stuff needed are we need to understand there requirements
+
+### Purchases
+
+<img src= "images/Purchases.PNG" width='400'>
+
+Inference- 
+- Purchase peak is arround 5000 and 10000 more in relation to the count
+
+### Data_Cleaning process (refer the jupyter file)
+
+- Mapping the User_ID based on the importance for the top 20 rather than excluding them totally
+
+### Model and Performance achieved
+
+- Gradient Boosting
+- RMSE Score- 3054.56
 
